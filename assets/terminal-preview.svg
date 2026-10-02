@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="490" viewBox="0 0 1200 490" role="img" aria-labelledby="title desc">
+  <title id="title">SSH Sentinel terminal preview</title>
+  <desc id="desc">Demo output detects a successful SSH login after five failures from the same test IP.</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="1180" height="470" rx="22" fill="url(#shell)" stroke="#334155" stroke-width="2"/>
+  <rect x="10" y="10" width="1180" height="50" rx="22" fill="#0b1020"/>
+  <path d="M10 40h1180v20H10z" fill="#0b1020"/>
+  <circle cx="43" cy="35" r="7" fill="#fb7185"/>
+  <circle cx="68" cy="35" r="7" fill="#fbbf24"/>
+  <circle cx="93" cy="35" r="7" fill="#34d399"/>
+  <text x="600" y="41" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" fill="#94a3b8">ssh-sentinel  •  sample run</text>
+  <rect x="58" y="88" width="6" height="34" rx="3" fill="url(#accent)"/>
+  <text x="83" y="114" font-family="SFMono-Regular,Consolas,monospace" font-size="24" font-weight="700" fill="#67e8f9">SSH SENTINEL</text>
+  <text x="258" y="114" font-family="SFMono-Regular,Consolas,monospace" font-size="19" fill="#e2e8f0">/ LOCAL SSH LOG TRIAGE</text>
+  <text x="83" y="157" font-family="SFMono-Regular,Consolas,monospace" font-size="17" fill="#94a3b8">Offline  •  Read-only  •  No runtime dependencies</text>
+  <text x="83" y="201" font-family="SFMono-Regular,Consolas,monospace" font-size="17" fill="#cbd5e1">Log: examples/sample_auth.log</text>
+  <text x="83" y="234" font-family="SFMono-Regular,Consolas,monospace" font-size="17" fill="#cbd5e1">Scanned 7 lines; parsed 6 failed and 1 successful SSH login events.</text>
+  <text x="83" y="267" font-family="SFMono-Regular,Consolas,monospace" font-size="17" fill="#cbd5e1">Rule: 5+ failures from one IP in 10 min; HIGH if a success follows 3+ failures.</text>
+  <rect x="58" y="296" width="1084" height="2" fill="#334155"/>
+  <text x="83" y="337" font-family="SFMono-Regular,Consolas,monospace" font-size="18" font-weight="700" fill="#fbbf24">ALERTS</text>
+  <rect x="80" y="357" width="1035" height="68" rx="12" fill="#4c0519" opacity=".60" stroke="#fb7185" stroke-width="1.5"/>
+  <rect x="80" y="357" width="6" height="68" rx="3" fill="#fb7185"/>
+  <text x="104" y="385" font-family="SFMono-Regular,Consolas,monospace" font-size="16" font-weight="700" fill="#fda4af">HIGH</text>
+  <text x="171" y="385" font-family="SFMono-Regular,Consolas,monospace" font-size="16" fill="#f8fafc">203.0.113.10 — successful login for 'alice' after 5 failed attempts</text>
+  <text x="171" y="408" font-family="SFMono-Regular,Consolas,monospace" font-size="16" fill="#f8fafc">within 10 min (at 2026-10-02 10:03:01).</text>
+  <text x="83" y="456" font-family="SFMono-Regular,Consolas,monospace" font-size="14" fill="#64748b">synthetic demo data  /  no traffic blocked  /  investigate alerts in context</text>
+</svg>

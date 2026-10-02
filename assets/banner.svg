@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="320" viewBox="0 0 1400 320" role="img" aria-labelledby="title desc">
+  <title id="title">SSH Sentinel</title>
+  <desc id="desc">A colorful banner for an offline SSH authentication threat detector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="320" rx="28" fill="url(#bg)"/>
+  <circle cx="1150" cy="90" r="140" fill="#22d3ee" opacity=".10"/>
+  <circle cx="1310" cy="280" r="190" fill="#fb7185" opacity=".11"/>
+  <circle cx="1030" cy="300" r="100" fill="#a78bfa" opacity=".10"/>
+  <path d="M1120 65 L1200 95 L1192 168 C1186 214 1154 241 1120 259 C1086 241 1054 214 1048 168 L1040 95 Z" fill="#0b1224" stroke="url(#shield)" stroke-width="8" filter="url(#glow)"/>
+  <path d="M1084 157 L1110 183 L1160 128" fill="none" stroke="#d9f99d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="50" width="58" height="7" rx="3.5" fill="#67e8f9"/>
+  <text x="64" y="142" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="2" fill="#ffffff">SSH SENTINEL</text>
+  <text x="67" y="190" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="500" fill="#dbeafe">A tiny, offline SSH authentication threat detector</text>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing=".7">
+    <rect x="66" y="226" width="137" height="37" rx="18" fill="#0ea5e9" opacity=".95"/><text x="86" y="250" fill="#fff">LOCAL-FIRST</text>
+    <rect x="215" y="226" width="124" height="37" rx="18" fill="#8b5cf6" opacity=".95"/><text x="239" y="250" fill="#fff">READ-ONLY</text>
+    <rect x="351" y="226" width="179" height="37" rx="18" fill="#14b8a6" opacity=".95"/><text x="372" y="250" fill="#fff">PYTHON • CLI</text>
+  </g>
+  <text x="66" y="291" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" fill="#cbd5e1">Clear rules. Useful alerts. No network calls.</text>
+</svg>
